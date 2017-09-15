@@ -1,16 +1,4 @@
-rm(list=ls())
-############################################################
-### Linear and Quadratic Discriminant Analysis (and KNN) ###
-############################################################
-# The Stock Market Data: Daily percentage returns for the S&P 500 stock index between 2001 and 2005. 
-# Each row also contains returns for a day and returns lagged from 1 to 5 days, volume in billions, 
-# and a factor named Direction with levels Down and Up indicating whether the market had a positive
-# or negative return that day.
-library(ISLR)
-names(Smarket)
-dim(Smarket)
-summary(Smarket)
-pairs(Smarket)    #The pairs() function produces a matrix of scatter plots
+lots
 head(Smarket)
 #The cor() function produces a matrix that contains all of the pairwise correlations among the predictors in a data set.
 cor(Smarket[,-9]) 
